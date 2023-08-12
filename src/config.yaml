@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Lizzie Wilkinson - UX Designer & Developer
+  site: 'lizziefen1.github.io'
   base: '/'
   trailingSlash: false
 
@@ -9,9 +9,9 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
+    default: Lizzie Wilkinson - UX Designer & Developer
     template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "portfolio of Designer & Developer Lizzie Wilkinson"
   robots:
     index: true
     follow: true

@@ -44,11 +44,11 @@ export const headerData = {
  
 
   ],
-  actions: [{ type: 'button', text: 'Download', href: 'https://github.com/onwidget/astrowind' }],
+//  actions: [{ type: 'button', text: 'Download', href: 'https://github.com/onwidget/astrowind' }],
 };
 
 export const footerData = {
-  links: [
+/*  links: [
     {
       title: 'Product',
       links: [
@@ -86,7 +86,7 @@ export const footerData = {
   secondaryLinks: [
     { text: 'Terms', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
-  ],
+  ], */
   socialLinks: [
 
     //{ ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },

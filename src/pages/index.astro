@@ -3,7 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 
 import Hero2 from '~/components/widgets/Hero2.astro';
-import Note from '~/components/widgets/Note.astro';
+
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
@@ -24,7 +24,7 @@ const metadata = {
 
   <Hero2
     callToAction={{ text: 'Download Resume', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
-    callToAction2={{ text: 'View Portfolio', href: '#features' }}
+    callToAction2={{ text: 'View Portfolio', href: '/Portfolio' }}
     image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
@@ -34,7 +34,7 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-       I'm a Graphic Designer and Front End Developer living in Kansas City, MO </span>  
+       Graphic Designer and Front End Developer </span>  
     </Fragment>
   </Hero2>
 

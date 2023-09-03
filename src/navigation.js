@@ -4,15 +4,15 @@ export const headerData = {
   links: [
   {
           text: 'Portfolio',
-          href: getPermalink('/portfolio'),
+          href: getPermalink('#Portfolio'),
         },
         {
           text: 'About',
-          href: getPermalink('/about'),
+          href: getPermalink('#About'),
         },
         {
           text: 'Contact',
-          href: getPermalink('/contact'),
+          href: getPermalink('#Contact'),
         },
   ],
 //  actions: [{ type: 'button', text: 'Download', href: 'https://github.com/onwidget/astrowind' }],

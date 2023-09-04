@@ -35,13 +35,13 @@ const {
     classes={{
       container: 'max-w-xl sm:mx-auto lg:max-w-2xl',
       title: 'text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-2 font-heading',
-      subtitle: 'max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-slate-400',
+      subtitle: 'max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-slate-200',
     }}
   />
   <div class="mx-auto max-w-7xl p-4 md:px-8">
     <div class={`md:flex ${isReversed ? 'md:flex-row-reverse' : ''} md:gap-16`}>
       <div class="md:basis-1/2 self-center">
-        {content && <div class="mb-8 text-lg dark:text-slate-200" set:html={content} />}
+        {content && <div class="mb-2 text-lg dark:text-slate-200" set:html={content} />}
 
         {
           items && (
@@ -63,7 +63,7 @@ const {
           )
         }
       </div>
-      <div aria-hidden="true" class="mt-8 md:mt-0 md:basis-1/2">
+      <div aria-hidden="true" class="mt-2 md:mt-0 md:basis-1/2">
         {
           image && (
             <div class="relative m-auto max-w-4xl">

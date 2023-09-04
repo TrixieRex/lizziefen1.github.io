@@ -1,6 +1,6 @@
 ---
 import '@fontsource-variable/inter';
-import '@fontsource-variable/Literata';
+
 
 
 // 'DM Sans'
@@ -24,7 +24,7 @@ import '@fontsource-variable/Literata';
 <style is:inline is:global>
   :root {
     --aw-font-sans: 'Inter Variable';
-    --aw-font-serif: 'Literata', serif;
+    --aw-font-serif: var(--aw-font-sans);
     --aw-font-heading: var(--aw-font-sans);
 
     --aw-color-primary: rgb(46 16 101);
@@ -41,7 +41,7 @@ import '@fontsource-variable/Literata';
 
   .dark {
     --aw-font-sans: 'Inter Variable';
-    --aw-font-serif: 'Literata', serif;
+    --aw-font-serif: var(--aw-font-sans);
     --aw-font-heading: var(--aw-font-sans);
 
     --aw-color-primary: rgb(46 16 101);

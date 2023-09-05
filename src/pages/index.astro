@@ -4,7 +4,7 @@ import Hero2 from '~/components/widgets/Hero2.astro';
 import Content from '~/components/widgets/Content.astro';
 import ContentFW from '~/components/widgets/ContentFW.astro';
 import Layout from '~/layouts/PageLayout.astro';
-import Note from '~/components/widgets/Note.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
 
 
 const metadata = {
@@ -89,26 +89,17 @@ const metadata = {
   </Content>
      
 
-  <!-- Content Widget **************** -->
+  <!-- Content Widget 2 **************** -->
 
   <Content
     isAfterContent
     items={[
       {
-        title: 'I love to learn',
+        title: 'I love technology',
         description:
-          'Accomplishments: Improved web accessibility by 55+ points through co-developing an accessibility forward templating and design system and utility CSS framework. Led documentation and implementation of accessibility processes and styling standards for development teams. Advocated for and integrated WCAG 2.1 compliance across multiple web properties and applications.',
+          'Brrrrrrrrrrrbrbrbrbrbrbr',
       },
-      {
-        title: 'I am incredibly passionate',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
-      },
-      {
-        title:'',
-        description:
-          'Transitioned Boutique Art Supply company from free e-commerce site to custom WordPress and WooCommerce build. Implemented wholesale management system, customer profiles and wishlists, and artist blog. Increased average D2C sales to over $35k a month.',
-      },
+    
    
     ]}
     image={{
@@ -123,32 +114,33 @@ const metadata = {
     </Fragment>
   </Content>
 
- 
-  <Content
-    isAfterContent
-    items={[
-      {
-        title: 'I love to learn',
-        description:
-          'Accomplishments: Improved web accessibility by 55+ points through co-developing an accessibility forward templating and design system and utility CSS framework. Led documentation and implementation of accessibility processes and styling standards for development teams. Advocated for and integrated WCAG 2.1 compliance across multiple web properties and applications.',
-      },
-  
-   
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
-    }}
-     image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
-    }}
-  >
-    <Fragment slot="content">Get to know me</Fragment>
+  <!-- CallToAction Widget *********** -->
 
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-violet-100 dark:bg-transparent"></div>
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'My Resume',
+        href: 'https://docs.google.com/document/d/1jZiTq14oJ4tq9_ZL-oBOG-qDsTnV0tMYS4rT1sNxYhE/edit?usp=sharing',
+        target: '_blank',
+        icon: 'tabler:download',
+      },
+      {
+        variant: 'primary',
+        text: 'E-mail Me',
+        href: 'mailto:lizziewilk85@gmail.com',
+        target: '_blank',
+        icon: 'tabler:mail-heart',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Interested in Learning More?</span>
     </Fragment>
-  </Content>
+
+    <Fragment slot="subtitle">
+      Download my resume or reach out via e-mail and I'll be in contact soon. Thank you! 
+    </Fragment>
+  </CallToAction>
 
 </Layout>
